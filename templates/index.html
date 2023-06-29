@@ -1,0 +1,25 @@
+
+
+
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>P_ID</th>
+        <th>NAME</th>
+        <th>Phone Number</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+        <tr>
+            {% for row in user %}
+            <td>
+                {{row}}
+            </td>
+
+            {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
